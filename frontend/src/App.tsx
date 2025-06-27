@@ -14,17 +14,17 @@ import Register from './pages/Auth/Register'
 import Dashboard from './pages/Dashboard/Dashboard'
 import Artists from './pages/Artists/Artists'
 import ArtistDetail from './pages/Artists/ArtistDetail'
-// import Albums from './pages/Albums/Albums'
-// import AlbumDetail from './pages/Albums/AlbumDetail'
-// import Music from './pages/Music/Music'
-// import Videos from './pages/Videos/Videos'
-// import Reviews from './pages/Reviews/Reviews'
-// import Files from './pages/Files/Files'
-// import Groups from './pages/Groups/Groups'
-// import GroupDetail from './pages/Groups/GroupDetail'
-// import Profile from './pages/Profile/Profile'
-// import Notifications from './pages/Notifications/Notifications'
-// import Users from './pages/Users/Users'
+import Albums from './pages/Albums/Albums'
+import AlbumDetail from './pages/Albums/AlbumDetail'
+import Music from './pages/Music/Music'
+import Videos from './pages/Videos/Videos'
+import Reviews from './pages/Reviews/Reviews'
+import Files from './pages/Files/Files'
+import Groups from './pages/Groups/Groups'
+import GroupDetail from './pages/Groups/GroupDetail'
+import Profile from './pages/Profile/Profile'
+import Notifications from './pages/Notifications/Notifications'
+import Users from './pages/Users/Users'
 
 // Protected Route Component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -102,23 +102,23 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="artists" element={<Artists />} />
             <Route path="artists/:id" element={<ArtistDetail />} />
-            {/* <Route path="albums" element={<Albums />} /> */}
-            {/* <Route path="albums/:id" element={<AlbumDetail />} /> */}
-            {/* <Route path="music" element={<Music />} /> */}
-            {/* <Route path="videos" element={<Videos />} /> */}
-            {/* <Route path="reviews" element={<Reviews />} /> */}
-            {/* <Route path="files" element={<Files />} /> */}
-            {/* <Route path="groups" element={<Groups />} /> */}
-            {/* <Route path="groups/:id" element={<GroupDetail />} /> */}
-            {/* <Route path="profile" element={<Profile />} /> */}
-            {/* <Route path="notifications" element={<Notifications />} /> */}
+            <Route path="albums" element={<Albums />} />
+            <Route path="albums/:id" element={<AlbumDetail />} />
+            <Route path="music" element={<Music />} />
+            <Route path="videos" element={<Videos />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="files" element={<Files />} />
+            <Route path="groups" element={<Groups />} />
+            <Route path="groups/:id" element={<GroupDetail />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="notifications" element={<Notifications />} />
             
             {/* Admin Routes */}
-            {/* <Route path="users" element={
+            <Route path="users" element={
               <AdminRoute>
                 <Users />
               </AdminRoute>
-            } /> */}
+            } />
           </Route>
 
           {/* Catch all route */}
